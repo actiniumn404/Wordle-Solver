@@ -1,0 +1,126 @@
+:root{
+    --black:#3a3a3c;
+    --yellow: #b59f3b;
+    --green: #538d4e;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #121213;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightblue;
+    min-height: 50vh;
+    justify-content: center;
+}
+
+#title_intro{
+    font-size: 48px;
+    margin: 0;
+}
+#title_des{
+    color: rgb(73, 73, 73);
+}
+a{
+    color: rgb(15, 109, 104);
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover{
+    background: rgb(15, 109, 104);
+    color: white;
+}
+.wordle_input{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    text-align: center;
+    font-family: monospace;
+    outline: none;
+    color: white;
+    background: var(--black);
+    border: 2px solid transparent;
+    margin: 5px;
+}
+.wordle_select{
+    background: var(--black);
+    color: white;
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 10px;
+    width: 100px;
+    outline: none;
+    margin: 5px;
+}
+#gui{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+#guessnum{
+    margin: 20px auto;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#guessnum input{
+    background: var(--black);
+    border: 0;
+    width:40px;
+    outline: 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+#solve{
+    width: 572px;
+    margin: 20px auto;
+    background: var(--black);
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#results{
+    margin: 20px auto;
+    font-size: 24px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    max-width:max(400px, 80vw);
+    margin: auto;
+    text-align: center;
+}
+.res{
+    background: white;
+    color: black;
+    border-radius: 8px;
+    display: block;
+    margin: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    width: -moz-fit-content;
+}

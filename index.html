@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordle Solver</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title_intro">The Wordle Solver</h1>
+            <h2 id="title_des">Made by <a href="https://actiniumn404.github.io" target="_blank">Actiniumn404</a></h2>
+        </header>
+        <main>
+            <div id="guessnum">
+                Guess #<input type="number" max="6" min="1"> / 6
+            </div>
+            <table id="gui">
+                
+            </table>
+            <button id="solve">Solve it for me!</button>
+            <div id="results">No results... yet!</div>
+        </main>
+        <script src="words.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
